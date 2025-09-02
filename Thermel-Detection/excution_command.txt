@@ -1,0 +1,16 @@
+X11(xcb)로 돌리기
+# (선택) Xwayland가 떠 있는지 확인
+pgrep Xwayland || echo "Xwayland not running?"
+
+# 환경변수 정리
+unset QT_QPA_PLATFORM
+export QT_QPA_PLATFORM=xcb
+export DISPLAY=:0
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+
+# 실행 (제가 준 파일명 기준)
+python3 thermal_stream_onnx.py \
+  --model /home/hph6489/embe_project/Thermal_cam.onnx \
+  --imgsz 128 --conf 0.02 --iou 0.45 --fps 9 --show \
+  --speed 8000000 --csdelay 0.0002 \
+  --fullscreen

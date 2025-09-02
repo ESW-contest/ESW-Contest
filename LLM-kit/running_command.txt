@@ -1,0 +1,11 @@
+python3 lm_runtime.py \
+  --vad crnn_onnx \
+  --vad_model ~/vad_models/vad_crnn.onnx \
+  --vad_config ~/vad_models/config.json \
+  --mic_array ~/doa_demo/mic_array_config.json \
+  --udp_ip 192.168.100.1 --udp_port 5005 \
+  --prob 0.25 --easy_mode 1 --clamp_deg -90 90 \
+  --gain_match 1 --auto_center 1 --center_alpha 0.02 \
+  --invert_sign 0 \
+  --yaw_offset_deg -0.5 \
+  --deadband_deg 1.2 --slew_deg_per_frame 3.0
