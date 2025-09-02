@@ -109,7 +109,7 @@ Raspberry Pi 기반 다중 모달 사람 감지 시스템입니다. RGB 카메�
 ## 실행 결과
 
 ### 실시간 사람 윤곽선 감지
-![실시간 감지 결과](https://github.com/ESW-contest/ESW-Contest/blob/main/docs/detection_result.jpg)
+![실시간 감지 결과](https://github.com/ESW-contest/ESW-Contest/blob/main/docs/hardware_detail.jpg)
 
 위 이미지는 본 시스템의 실시간 사람 감지 결과를 보여줍니다. YOLOv8 Segmentation 모델을 통해 여러 사람의 정확한 윤곽선을 실시간으로 추출하고 있습니다.
 
@@ -126,7 +126,7 @@ Raspberry Pi 기반 다중 모달 사람 감지 시스템입니다. RGB 카메�
 - **최적화된 후처리**: 벡터화 연산으로 고속 마스크 생성
 
 ### 하드웨어 시스템 상세
-![하드웨어 상세 구성](https://github.com/ESW-contest/ESW-Contest/blob/main/docs/hardware_detail.jpg)
+![하드웨어 상세 구성](https://github.com/ESW-contest/ESW-Contest/blob/main/docs/detection_result.jpg)
 
 시스템의 내부 구성을 자세히 보여주는 이미지입니다. Raspberry Pi Camera Cable과 각종 연결 케이블들이 체계적으로 정리되어 있어 안정적인 동작을 보장합니다.
 
